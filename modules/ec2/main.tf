@@ -12,7 +12,7 @@ resource "aws_instance" "this" {
   associate_public_ip_address = var.associate_public_ip
   user_data                   = var.user_data
 
-  root_block_device {
+ /* root_block_device {
     volume_size = var.root_volume_size
     volume_type = "gp3"
     encrypted   = true
@@ -23,4 +23,4 @@ resource "aws_instance" "this" {
   }
 
   tags = merge(var.tags, { Name = var.name })
-}
+} */
